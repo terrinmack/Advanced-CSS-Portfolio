@@ -12,96 +12,102 @@
 <body>
     <!-- header/navbar -->
     <header>
-        <span class="background-title">
+        <div>
             <h1>Terri Mack</h1>
-        </span>
+        </div>
         <nav>
             <ul class="navbar">
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="https://resume.io/resume-examples">Resume</a></li>
+                <li><a href="https://resume.io/resume-examples" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- hero section/home page -->
     <section class="hero">
-        <!-- add cool subtitle here that spans -->
         <div class="hero-subtitle">
-            <span class="background-text"></span>
+            <p>"Remember us" -Emet Selch</p>
         </div>
     </section>
 
     <!-- about me article -->
-    <article>
-        <div id="about">
-            <div class="about-me-container">
-                <h1> Who Am I? </h1>
+    <section>
+        <div id="about-me" class="about-me">
+            <div class="title">
+                <h2> Who Am I? </h2>
             </div>
             <div class="intro">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac euismod lacus, a fermentum ligula. Integer fermentum, urna et efficitur tincidunt, justo nulla ornare neque, a porta libero dui eget quam. Nullam in nisi nec tellus lacinia feugiat id a urna. Curabitur vel sapien posuere, ultricies neque sed, aliquet lectus. Phasellus ac commodo velit. Donec non ullamcorper lacus, sit amet pharetra diam. Suspendisse a tellus tortor.</p>
                 <p>Donec porttitor eu turpis at auctor. Sed quam tortor, pharetra vitae ligula id, rhoncus porta metus. Ut orci neque, vulputate sit amet vestibulum id, pretium in ipsum. In hac habitasse platea dictumst. Duis auctor lacus odio, sed molestie augue aliquet eu. Aenean rhoncus nisl in lectus mollis, at ornare elit fermentum. Morbi volutpat felis eu mollis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
-    </article>
+    </section>
 
     <!-- work article -->
-    <article>
-        <div id="work"></div>
-        <div class="work-container">
+    <section id="work" class="work">
+        <div class="title">
             <h2> Work </h2>
-            <!-- gallery 1 -->
-            <span class="span-background">
-                <h3>Surf Report</h3>
-                <span class="subheading">MERN Stacks</span>
-            </span>
+        </div>
+
+    <!-- project gallery -->
+        <div class="project-wrapper">
+            <div class="project-grid">
+                <a href="https://terrinmack.github.io/code-refactor-challenge-1/" target="_blank" class="project horiseon">
+                    <div class="project-title">
+                        <h3>Horiseon Refactor</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+
+                <a href="https://www.homedepot.com/b/Lighting-Commercial-Lighting-Shop-Lights/N-5yc1vZc9h6" target="_blank" class="project led">
+                    <div class="project-title">
+                        <h3>LED Wall</h3>
+                        <p>Node/IoT</p>
+                    </div>
+                </a>
+
+                <a href="https://www.desmos.com/scientific" target="_blank" class="project calculator">
+                    <div class="project-title">
+                        <h3>Calculator</h3>
+                        <p>React/JavaScrtipt/CSS</p>
+                    </div>
+                </a>
+
+                <a href="https://puzzlegarage.com/" target="_blank" class="project puzzle">
+                    <div class="project-title">
+                        <h3>Pastel Puzzles</h3>
+                        <p>MERN Stack</p>
+                    </div>
+                </a>
+
+                <a href="https://www.nike.com/women?cp=90083564018_search_%7CNike%7CGOOGLE%7C71700000038284603%7CWOMEN_X_X_X_X-Device_X_Legacy_Core-NikeBrand_Exact%7Ce%7Cc&gclsrc=aw.ds&&gclid=CjwKCAiAwc-dBhA7EiwAxPRylMbgOzALxrdDCbvcFpiqGLN4jQQakrvj5vhj3CZXhzqt6gfFCUTwyxoCQeQQAvD_BwE&gclsrc=aw.ds" target="_blank" class="project run-buddy">
+                    <div class="project-title">
+                        <h3>Run Buddy</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
         
-            <!-- gallery 2 -->
-            <span class="span-background">
-                <h3>LED Wall</h3>
-                <span class="subheading">Node/loT</span>
-            </span>
-
-            <!-- gallery 3 -->
-            <span class="span-background">
-                <h3>Calculator</h3>
-                <span class="subheading">React/JavaScript/CSS</span>
-            </span>
-
-            <!-- gallery 4 -->
-            <span class="span-background">
-                <h3>Pastel Puzzles</h3>
-                <span class="subheading">MERN Stack</span>
-            </span>
-
-            <!-- gallery 5 -->
-            <span class="span-background">
-                <h3>Run Buddy</h3>
-                <span class="subheading">HTML/CSS</span>
-            </span>
-        </div>      
-    </article>
-
     <!-- contact me footer -->
-    <footer>
-        <div id="contact">
-            <div class="footer-container">
-                <div class="contact-container">
-                    Contact Me
-                </div>
-                <div class="grid-phone">
-                    555-555-5555
-                </div>
-                <div class="grid-email">
-                    <a href="mailto:terrimack15@gmail.com">terrimack24@gmail.com</a>
-                </div>
-                <div class="grid-github">
-                    <a href="https://github.com/terrinmack" target="_blank">GitHub</a>
-                </div>
+    <footer id="contact">
+        <div class="title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="footer-wrapper">
+            <div id="contact-list">
+                <ul>
+                    <li><a href="mailto:terrimack24@gmail.com">Email</a></li>
+                    <li><a href="https://github.com/terrinmack">GitHub</a></li>
+                    <li><p>(555)555-555 </p></li>
+                </ul>
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
