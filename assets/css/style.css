@@ -7,12 +7,12 @@ html {
 body {
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    background-color: #CCC9DC;
+    background: linear-gradient(45deg, rgb(79, 236, 119), rgb(10, 10, 255));
 }
 
 /* header */
 header {
-    background-color: #324A5F;
+    background-color: #4683b8;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -67,7 +67,7 @@ header nav ul li a:hover {
     display: flex;
     padding-top: 450px;
     justify-content: end;
-    text-align: right;
+    padding-right: 50px;
     color: #e7e7e7;
 }
 
@@ -137,6 +137,13 @@ h2 {
     box-shadow: 0px 0px 40px 20px aquamarine;
 }
 
+.project-title {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
 .horiseon {
     grid-column: 1/3;
     grid-row: span 2;
@@ -163,13 +170,6 @@ h2 {
     background-size: 30%;  
 }
 
-.project-title {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
 /* footer */
 footer {
     color: black;
@@ -177,7 +177,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .footer-wrapper {
@@ -206,4 +205,40 @@ footer ul li a:hover {
     color: rgb(31, 129, 96);
 }
 
-/* media query for small screens (cell phones) */
+/* media query for small screens (tablets) */
+@media screen and (max-width: 768px) {
+    .hero {
+        background-size: cover;
+    }
+    .hero-subtitle {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .intro {
+        font-size: 15px;
+    }
+}
+
+/* media query for small screens (cellphone) */
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+    }
+    header nav ul {
+        min-height: 75px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .title {
+        min-width: 100%;
+        max-width: 100%;
+        text-align: center;
+        border-bottom: 3px solid black;
+    }
+}
