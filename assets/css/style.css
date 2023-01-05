@@ -1,8 +1,4 @@
 
-:root {
-
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -61,7 +57,7 @@ header nav ul li a:hover {
 .hero {
     background-image: url("../images/Amaurot-image.jpg");
     background-attachment: fixed;
-    background-position: -1000px 1100px;
+    background-position: 0px -200px;
     height: 500px;
     background-size: cover;
 }
