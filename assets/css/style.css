@@ -57,7 +57,6 @@ header nav ul li a:hover {
 .hero {
     background-image: url("../images/Amaurot-image.jpg");
     background-attachment: fixed;
-    background-position: 0px -200px;
     height: 500px;
     background-size: cover;
 }
@@ -207,11 +206,9 @@ footer ul li a:hover {
 
 /* media query for small screens (tablets) */
 @media screen and (max-width: 768px) {
-    .hero {
-        background-size: cover;
-    }
     .hero-subtitle {
         font-size: 30px;
+        padding-bottom: 30px;
     }
     h2 {
         font-size: 30px;
@@ -232,13 +229,43 @@ footer ul li a:hover {
     .hero {
         flex-direction: column;
     }
+
+    .hero-subtitle {
+
+    }
     .about-me {
         flex-direction: column;
     }
     .title {
+        justify-content: center;
         min-width: 100%;
         max-width: 100%;
         text-align: center;
         border-bottom: 3px solid black;
+        padding: 10px;
+    }
+    .work {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .project-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    .project-grid {
+        width: 75%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    .footer-wrapper {
+        width: 100%;
+    }
+    footer ul li {
+        padding: 10px;
+        text-align: center;
     }
 }
