@@ -60,6 +60,10 @@ header nav ul li a:hover {
     background-position: 0 60rem;
 }
 
+.hero img {
+    height: 300px;
+}
+
 .hero .hero-subtitle {
     font-size: 2rem;
     display: flex;
